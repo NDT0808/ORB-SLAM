@@ -45,7 +45,7 @@ cd ORB-SLAM
 cd ~/ORB_SLAM3
 chmod +x build.sh
 ./build.sh
-
+```
 
 **3. Install Python Dependencies (Windows Host)**
 ```bash
