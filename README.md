@@ -31,3 +31,35 @@ ORB_SLAM3_Control/
 │   └── Stereo/
 │       └── stereo_kitti.cc     # Modified C++ Core (Integrated Signal Handlers)
 └── README.md
+
+## ⚙️ Installation & Setup(WSL / Ubuntu)
+
+**1. Clone the repository**
+```bash
+git clone [https://github.com/NDT0808/ORB-SLAM.git](https://github.com/NDT0808/ORB-SLAM.git)
+cd ORB-SLAM
+```
+
+**2. Compile the Modified C++ Core**
+```bash
+cd ~/ORB_SLAM3
+chmod +x build.sh
+./build.sh
+
+
+**3. Install Python Dependencies (Windows Host)**
+```bash
+pip install customtkinter
+```
+
+## 🚀 Usage
+To run the main eKYC pipeline with webcam feed:
+
+Bash
+python slam_gui.py
+
+
+##🧠 System Architecture Highlights
+This project bridges the gap between a high-level Python interface and a highly volatile C++ memory environment by rewriting the Core Main Loop to listen for custom OS-level interrupts (<csignal>).
+
+Created by NDT0808. Focused on Computer Vision, SLAM, and Backend Systems.
