@@ -1,3 +1,14 @@
+# Bỏ qua các file cấu hình Python
+__pycache__/
+*.pyc
+
+# Bỏ qua thư mục Dataset 
 dataset/
-*.mp4
-*.pt
+sequences/
+*.png
+*.jpg
+
+# Bỏ qua các file kết quả chạy nháp
+*.txt
+!CMakeLists.txt
+!README.md
